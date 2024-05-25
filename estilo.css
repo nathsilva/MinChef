@@ -1,0 +1,119 @@
+:root {
+    --dark: #0c0c0c;
+    --white: #fff;
+    --orange: #e99221;
+    --gray: #949494;
+    --gray2: #cccccc;
+}
+
+body {
+    background-color: var(--dark);
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+
+.box-questions {
+    background-color: var(--white);
+    color: var(--dark);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80vh;
+    width: 600px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.header {
+    background-color: var(--orange);
+    color: var(--white);
+    border-radius: 10px 10px 0 0;
+    padding: 1rem;
+}
+
+.footer {
+    background-color: var(--orange);
+    border-radius: 0 0 10px 10px;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+input {
+    width: 80%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    background-color: var(--gray2);
+    color: var(--dark);
+}
+
+button:hover {
+    cursor: pointer;
+    transition: .4s;
+    background-color: var(--gray);
+}
+
+#status {
+    display: none;
+    margin: 10px;
+    color: var(--dark);
+}
+
+.chat-history {
+    padding: 1rem;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: 100%;
+    background-color: var(--white);
+}
+
+.box-my-message {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.box-response-message {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.my-message,
+.response-message {
+    padding: 1rem;
+    border-radius: 10px;
+    color: var(--white);
+    margin: 0;
+    max-width: 80%;
+    word-wrap: break-word;
+    font-size: 2rem;
+}
+
+.my-message {
+    background-color: var(--gray);
+    font-size: 2rem;
+}
+
+.response-message {
+    background-color: var(--gray2);
+    color: var(--dark);
+    font-size: 2rem;
+}

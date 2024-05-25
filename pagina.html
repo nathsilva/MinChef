@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot de Receitas</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+    <div class="box-questions">
+        <div class="header">
+            <h1>Chatbot de Receitas</h1>
+        </div>
+        <p id="status"></p>
+        <div id="history" class="chat-history"></div>
+        <div class="footer">
+            <input type="text" id="message-input" placeholder="Digite sua mensagem aqui">
+            <button id="btn-submit" onclick="sendMessage()">Enviar</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
